@@ -1,15 +1,19 @@
 const categories = [
    {
-      name: 'Gold',
+      name: 'Ore',
       id: 0,
    },
    {
-      name: 'Mounts',
+      name: 'Stones',
       id: 1,
    },
    {
-      name: 'Level Boost',
+      name: 'Herbs',
       id: 2,
+   },
+   {
+      name: 'Cloth',
+      id: 3
    }
 ]
 

@@ -1,6 +1,6 @@
 function Logo() {
    return (
-      <h1>JellyBell</h1>
+      <h1>Venture Co.</h1>
    )
 }
 
