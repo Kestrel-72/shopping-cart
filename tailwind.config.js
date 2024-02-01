@@ -9,6 +9,10 @@ export default {
       gridTemplateColumns: {
          // Complex site-specific column configuration
          'header': '200px minmax(400px, 1fr) 200px',
+         'catalog' : 'repeat(auto-fill,minmax(250px, 1fr))'
+       },
+       gridTemplateRows: {
+         'catalog-layout': 'max-content 1fr',
        },
        colors: {
          'text-color': '#FFFFFF',

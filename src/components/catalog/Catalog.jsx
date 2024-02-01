@@ -10,9 +10,9 @@ function Catalog( { title, database } ) {
    )
 
    return (
-      <div className="width-[1200px] pt-10 grid grid-rows-2">
-         <h1 className="text-3xl font-semibold">{title}</h1>
-         <div className="catalog-cards flex gap-6">
+      <div className="pt-10 grid grid-rows-catalog-layout">
+         <h1 className="text-3xl font-semibold pb-6">{title}</h1>
+         <div className="catalog-cards grid gap-6 grid-cols-catalog">
             {cards}
          </div>
       </div>

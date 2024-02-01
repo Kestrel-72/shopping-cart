@@ -3,7 +3,7 @@ import HeaderBottom from "./HeaderBottom"
 
 function Header() {
    return (
-      <header className="w-[1200px]">
+      <header className="">
          <HeaderTop />
          <HeaderBottom />
       </header>
