@@ -9,7 +9,11 @@ export default {
       gridTemplateColumns: {
          // Complex site-specific column configuration
          'header': '200px minmax(400px, 1fr) 200px',
-       }
+       },
+       colors: {
+         'text-color': '#FFFFFF',
+         'uncommon': '#1eff00'
+       },
     },
   },
   plugins: [],
