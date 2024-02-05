@@ -1,4 +1,6 @@
-const stones = [
+import Database from "./Database";
+
+const items = [
    {
       name: 'Rough stone',
       image: 'src/assets/images/stone_rough.jpg',
@@ -24,5 +26,7 @@ const stones = [
       rarity: 'common'
    },
 ]
+
+const stones = new Database('Stones', items);
 
 export default stones;

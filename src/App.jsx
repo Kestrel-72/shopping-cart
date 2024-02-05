@@ -6,9 +6,9 @@ import stones from "./assets/stonesDB";
 
 function App() {
    return (
-      <div className="max-w-screen-lg text-text-color p-6">
+      <div className="max-w-screen-lg text-text-color p-6 text-base md:text-lg">
          <Header />
-         <Catalog title={"Stones"} database={ore} />
+         <Catalog database={stones} />
       </div>
    )
 }

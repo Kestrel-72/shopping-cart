@@ -1,4 +1,6 @@
-const ore = [
+import Database from "./Database";
+
+const items = [
    {
       name: 'Copper ore',
       image: 'src/assets/images/ore_copper.jpg',
@@ -24,5 +26,7 @@ const ore = [
       rarity: 'common'
    }
 ]
+
+const ore = new Database('Ore', items);
 
 export default ore;
