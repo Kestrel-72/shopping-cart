@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 function Logo() {
    return (
-      <h1>Venture Co.</h1>
+         <h1><Link to='/'>Venture Co.</Link> </h1>
    )
 }
 

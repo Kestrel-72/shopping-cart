@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
+
 function Category({ category }) {
    return (
       <li className="category flex items-center">
-         <a href="">{category.name}</a>
+         <Link to={`catalog/${category.name}`}>{category.name}</Link>
       </li>
    )
 }
