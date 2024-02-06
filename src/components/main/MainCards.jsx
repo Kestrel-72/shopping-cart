@@ -2,7 +2,7 @@ import MainCard from "./MainCard";
 
 function MainCards() {
    return (
-      <div className="main-cards flex gap-4 justify-center">
+      <div className="main-cards grid gap-6 md:grid-cols-catalog-md grid-cols-catalog-sm">
          <MainCard 
             title={"Time is money, friend"}
             text={"Receive your purchase in less than 200ms"}

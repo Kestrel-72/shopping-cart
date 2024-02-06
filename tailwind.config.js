@@ -9,8 +9,8 @@ export default {
       gridTemplateColumns: {
          // Complex site-specific column configuration
          'header': 'minmax(0px, 200px) minmax(min-content, 1fr) minmax(40px, 200px)',
-         'catalog-sm' : 'repeat(auto-fill, minmax(120px, 1fr))',
-         'catalog-md' : 'repeat(auto-fill, minmax(200px, 1fr))'
+         'catalog-sm' : 'repeat(auto-fit, minmax(120px, 1fr))',
+         'catalog-md' : 'repeat(auto-fit, minmax(200px, 1fr))'
        },
        gridTemplateRows: {
          'catalog-layout': 'max-content 1fr',
