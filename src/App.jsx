@@ -10,7 +10,7 @@ function App() {
    return (
       <div className="max-w-screen-lg text-text-color p-6 text-base md:text-lg">
          <Header />
-         <Catalog database={cloth} />
+         <Main />
       </div>
    )
 }
