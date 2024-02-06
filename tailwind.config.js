@@ -19,6 +19,9 @@ export default {
          'text-color': '#FFFFFF',
          'uncommon': '#1eff00'
        },
+       boxShadow: {
+         'blur': 'box-shadow: inset 0px 0px 4px 4px #DBA632;',
+       }
     },
   },
   plugins: [],
