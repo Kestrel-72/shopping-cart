@@ -5,7 +5,8 @@ const items = [
       name: 'Copper ore',
       image: '/src/assets/images/ore_copper.jpg',
       id: 0,
-      rarity: 'common'
+      rarity: 'common',
+      price: 50
    },
    {
       name: 'Tin ore',
