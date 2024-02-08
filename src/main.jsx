@@ -7,6 +7,6 @@ import ore from '/src/assets/oreDB.js'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-      <Item item={ore.items[0]}/>
+      <Router />
   </React.StrictMode>,
 )

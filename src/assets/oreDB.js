@@ -12,19 +12,22 @@ const items = [
       name: 'Tin ore',
       image: '/src/assets/images/ore_tin.jpg',
       id: 1,
-      rarity: 'common'
+      rarity: 'common',
+      price: 100
    },
    {
       name: 'Silver ore',
       image: '/src/assets/images/ore_silver.jpg',
       id: 2,
-      rarity: 'uncommon'
+      rarity: 'uncommon',
+      price: 2000,
    },
    {
       name: 'Iron ore',
       image: '/src/assets/images/ore_iron.jpg',
       id: 3,
-      rarity: 'common'
+      rarity: 'common',
+      price: 1000
    }
 ]
 

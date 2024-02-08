@@ -5,7 +5,8 @@ import Item from "../catalog/Item";
 function Header() {
    return (
       <header className="">
-         <Item />
+         <HeaderTop />
+         <HeaderBottom />
       </header>
    )
 }
