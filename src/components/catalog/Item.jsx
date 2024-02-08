@@ -32,7 +32,7 @@ function Item() {
    return (
       <div>
          <h1 className="text-3xl font-semibold pb-6 text-white">{item.name}</h1>
-         <div className="rounded-md grid grid-cols-[100px_1fr] grid-rows-4 gap-2 text-white font-semibold">
+         <div className="rounded-md grid grid-cols-[100px_1fr] grid-rows-item-layout justify-items-start gap-2 text-white font-semibold">
             <div className="row-span-3">
                <Icon image={item.image}/>
             </div>
@@ -42,7 +42,7 @@ function Item() {
                <input type="number" name="quantity" id="quantity" pattern="[0-9]" value={quantity} onChange={handleQuantityChange} className="text-black w-20"/>
             </div>
             <div className="col-start-2">Total: {calculateTotal()}</div>
-            <button className="col-start-2 font-semibold">Buy</button>
+            <button className="col-start-2 font-semibold border-2 rounded-md p-2 text-black bg-white hover:shadow-button">Add to cart</button>
          </div>
       </div>
    )

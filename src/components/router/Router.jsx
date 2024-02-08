@@ -1,15 +1,17 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import Main from "./main/Main.jsx"
-import App from "../App.jsx"
-import Catalog from "./catalog/Catalog.jsx"
+import Main from "../main/Main.jsx"
+import App from "../../App.jsx"
+import Catalog from "../catalog/Catalog.jsx"
 import database from '/src/assets/Database.js'
-import Item from "./catalog/Item.jsx"
+import Item from "../catalog/Item.jsx"
+import ErrorPage from "./ErrorPage.jsx"
 
 function Router() {
    const router = createBrowserRouter([
       {
         path: "/",
         element: <App />,
+        errorElement: <ErrorPage />,
         children: [
          { index: true, element: <Main /> },
          { path: "catalog/herbs", element: <Catalog items={database.getByCategory('herbs')} /> },

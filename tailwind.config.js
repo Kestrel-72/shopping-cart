@@ -14,6 +14,7 @@ export default {
        },
        gridTemplateRows: {
          'catalog-layout': 'max-content 1fr',
+         'item-layout': '1fr 1fr 1fr 2fr'
        },
        colors: {
          'text-color': '#FFFFFF',
@@ -21,6 +22,7 @@ export default {
        },
        boxShadow: {
          'blur': 'box-shadow: inset 0px 0px 4px 4px #DBA632;',
+         'button': ' inset 0 0 20px 0px rgba(0, 0, 0, 0.2)',
        }
     },
   },
