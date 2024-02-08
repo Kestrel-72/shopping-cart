@@ -3,6 +3,7 @@ import Main from "./main/Main.jsx"
 import App from "../App.jsx"
 import Catalog from "./catalog/Catalog.jsx"
 import database from '/src/assets/Database.js'
+import Item from "./catalog/Item.jsx"
 
 function Router() {
    const router = createBrowserRouter([
@@ -15,6 +16,7 @@ function Router() {
          { path: "catalog/ore", element: <Catalog items={database.getByCategory('ore')} /> },
          { path: "catalog/cloth", element: <Catalog items={database.getByCategory('cloth')} /> },
          { path: "catalog/stones", element: <Catalog items={database.getByCategory('stones')} /> },
+         { path: "catalog/:id", element: <Item /> },
         ]
       },
     ]);

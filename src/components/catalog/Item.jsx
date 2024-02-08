@@ -1,10 +1,13 @@
 import { useState } from "react";
 import Icon from "./Icon";
+import { useParams } from "react-router-dom";
+import database from "../../assets/Database";
 
-function Item( { item } ) {
+function Item() {
+   const { id } = useParams();
+   const item = database.items.find((item) => item.id == id);
    const [quantity, setQuantity] = useState(0);
    
-
    function calculateTotal() {
       let total = 0;
       if (quantity < 0) {
@@ -42,7 +45,6 @@ function Item( { item } ) {
             <button className="col-start-2 font-semibold">Buy</button>
          </div>
       </div>
-      
    )
 }
 
