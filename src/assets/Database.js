@@ -17,7 +17,7 @@ const items = [
       image: '/src/assets/images/cloth_linen.jpg',
       id: 0,
       rarity: 'common',
-      price: 10
+      price: 1430065
    },
    {
       category: 'cloth',
