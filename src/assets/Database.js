@@ -5,7 +5,6 @@ class Database {
 
    getByCategory(category) {
       let foundItems = this.items.filter(item => item.category == category);
-      console.log(foundItems)
       return foundItems; 
    }
 }

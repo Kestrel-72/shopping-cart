@@ -10,11 +10,12 @@ import { useState } from "react"
 
 function Router() {
    let [cart, setCart] = useState(new Cart());
+   let [itemsQnt, setItemsQnt] = useState(cart.items.length);
 
    const router = createBrowserRouter([
       {
         path: "/",
-        element: <App />,
+        element: <App cartQuantity={cart.items.length}/>,
         errorElement: <ErrorPage />,
         children: [
          { index: true, element: <Main /> },
@@ -22,7 +23,7 @@ function Router() {
          { path: "catalog/ore", element: <Catalog items={database.getByCategory('ore')} /> },
          { path: "catalog/cloth", element: <Catalog items={database.getByCategory('cloth')} /> },
          { path: "catalog/stones", element: <Catalog items={database.getByCategory('stones')} /> },
-         { path: "catalog/:id", element: <Item cart={cart} setCart={setCart}/> },
+         { path: "catalog/:id", element: <Item cart={cart} setCart={setCart} setItemsQnt={setItemsQnt}/> },
         ]
       },
     ]);

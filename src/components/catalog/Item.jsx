@@ -4,17 +4,17 @@ import { useParams } from "react-router-dom";
 import database from "../../assets/Database";
 import Price from "./Price";
 
-function Item( {cart, setCart} ) {
+function Item( {cart, setCart, setItemsQnt} ) {
    const { id } = useParams();
    const [quantity, setQuantity] = useState(0);
    const itemInCart = cart.items.find((item) => item.id == id);
    const [isInCart, setIsInCart] = useState(itemInCart ? true : false);
    const item = database.items.find((item) => item.id == id);
-   console.log(isInCart)
    
    function addToCart(itemId, quantity) {
       cart.addItem(itemId, quantity);
       setCart(cart);
+      setItemsQnt(cart.items.length);
       if (cart.items.find((item) => item.id == id)) {
          setIsInCart(true);
       }

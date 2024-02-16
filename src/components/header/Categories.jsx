@@ -5,7 +5,6 @@ function Categories() {
    const categoriesList = categories.map(category => 
       <Category category={category} key={category.id}/>
    );
-   console.log(categoriesList)
    return (
       <div className="categories col-start-2 flex items-center">
          <ul className="flex md:gap-8 gap-4">{categoriesList}</ul>

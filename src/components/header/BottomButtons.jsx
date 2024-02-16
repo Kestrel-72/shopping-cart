@@ -1,9 +1,9 @@
 import CartButton from "./CartButton";
 
-function BottomButtons() {
+function BottomButtons( {cartQuantity} ) {
    return (
       <div className="bottom-buttons flex items-center">
-         <CartButton />
+         <CartButton cartQuantity={cartQuantity} key={cartQuantity}/>
       </div>
    )
 }
