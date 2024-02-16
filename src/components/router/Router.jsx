@@ -7,6 +7,7 @@ import Item from "../catalog/Item.jsx"
 import ErrorPage from "./ErrorPage.jsx"
 import Cart from "../cart/Cart.js"
 import { useState } from "react"
+import CartComponent from "../cart/CartComponent.jsx"
 
 function Router() {
    let [cart, setCart] = useState(new Cart());
@@ -24,6 +25,7 @@ function Router() {
          { path: "catalog/cloth", element: <Catalog items={database.getByCategory('cloth')} /> },
          { path: "catalog/stones", element: <Catalog items={database.getByCategory('stones')} /> },
          { path: "catalog/:id", element: <Item cart={cart} setCart={setCart} setItemsQnt={setItemsQnt}/> },
+         { path: "cart", element: <CartComponent cart={cart} /> },
         ]
       },
     ]);

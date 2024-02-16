@@ -3,6 +3,7 @@ import Icon from "./Icon";
 import { useParams } from "react-router-dom";
 import database from "../../assets/Database";
 import Price from "./Price";
+import { Link } from "react-router-dom";
 
 function Item( {cart, setCart, setItemsQnt} ) {
    const { id } = useParams();
@@ -63,10 +64,15 @@ function Item( {cart, setCart, setItemsQnt} ) {
                className="col-start-2 font-semibold border-2 rounded-md p-2 text-black bg-white hover:shadow-button">
                Add to cart
             </button> : 
-            <button onClick={() => goToCart()} 
-               className="col-start-2 font-semibold border-2 rounded-md p-2 text-black bg-white hover:shadow-button">
-               { itemInCart.qnt } in cart
-            </button>
+            
+               <button onClick={() => goToCart()} 
+                  className="col-start-2 font-semibold border-2 rounded-md p-2 text-black bg-white hover:shadow-button">
+                     <Link to={`/cart`}>
+                        { itemInCart.qnt } in cart
+                     </Link>
+               </button>
+            
+            
             }
             
          </div>
