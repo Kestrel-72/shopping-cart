@@ -54,9 +54,9 @@ function Item( {cart, setCart, setItemsQnt} ) {
                <Icon image={item.image}/>
             </div>
             <div className="col-start-2">Price: <Price price={item.price}/></div>
-            <div className="col-start-2">
+            <div className="col-start-2 flex items-baseline gap-1">
                <label htmlFor="quantity">Quantity: </label>
-               <input type="number" name="quantity" id="quantity" pattern="[0-9]" value={quantity} onChange={handleQuantityChange} className="text-black w-20"/>
+               <input type="number" name="quantity" id="quantity" pattern="[0-9]" value={quantity} onChange={handleQuantityChange} className="w-20 text-orange-300 bg-indigo-800 pl-1"/>
             </div>
             <div className="col-start-2">Total: <Price price={calculateTotal()}/></div>
             {!isInCart ? 
