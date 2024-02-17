@@ -9,7 +9,7 @@ class Database {
    }
 }
 
-let imageUrl = '/public/images/';
+let imageUrl = '/images/';
 
 const items = [
    {
