@@ -9,11 +9,13 @@ class Database {
    }
 }
 
+let imageUrl = '/public/images/';
+
 const items = [
    {
       category: 'cloth',
       name: 'Linen cloth',
-      image: '/src/assets/images/cloth_linen.jpg',
+      image: imageUrl + 'cloth_linen.jpg',
       id: 0,
       rarity: 'common',
       price: 1430065
@@ -21,7 +23,7 @@ const items = [
    {
       category: 'cloth',
       name: 'Wool cloth',
-      image: '/src/assets/images/cloth_wool.jpg',
+      image: imageUrl + 'cloth_wool.jpg',
       id: 1,
       rarity: 'common',
       price: 50
@@ -29,7 +31,7 @@ const items = [
    {
       category: 'cloth',
       name: 'Silk cloth',
-      image: '/src/assets/images/cloth_silk.jpg',
+      image: imageUrl + 'cloth_silk.jpg',
       id: 2,
       rarity: 'common',
       price: 200
@@ -37,7 +39,7 @@ const items = [
    {
       category: 'cloth',
       name: 'Mageweave cloth',
-      image: '/src/assets/images/cloth_mageweave.jpg',
+      image: imageUrl + 'cloth_mageweave.jpg',
       id: 3,
       rarity: 'common',
       price: 500
@@ -45,7 +47,7 @@ const items = [
    {
       category: 'herbs',
       name: 'Peacebloom',
-      image: '/src/assets/images/herb_peacebloom.jpg',
+      image: imageUrl + 'herb_peacebloom.jpg',
       id: 4,
       rarity: 'common',
       price: 15
@@ -53,7 +55,7 @@ const items = [
    {
       category: 'herbs',
       name: 'Silverleaf',
-      image: '/src/assets/images/herb_silverleaf.jpg',
+      image: imageUrl + 'herb_silverleaf.jpg',
       id: 5,
       rarity: 'common',
       price: 15
@@ -61,7 +63,7 @@ const items = [
    {
       category: 'herbs',
       name: 'Earthroot',
-      image: '/src/assets/images/herb_earthroot.jpg',
+      image: imageUrl + 'herb_earthroot.jpg',
       id: 6,
       rarity: 'common',
       price: 50
@@ -69,7 +71,7 @@ const items = [
    {
       category: 'herbs',
       name: 'Mageroyal',
-      image: '/src/assets/images/herb_mageroyal.jpg',
+      image: imageUrl + 'herb_mageroyal.jpg',
       id: 7,
       rarity: 'common',
       price: 80
@@ -77,7 +79,7 @@ const items = [
    {
       category: 'herbs',
       name: 'Swiftthistle',
-      image: '/src/assets/images/herb_swiftthistle.jpg',
+      image: imageUrl + 'herb_swiftthistle.jpg',
       id: 8,
       rarity: 'common',
       price: 500
@@ -85,7 +87,7 @@ const items = [
    {
       category: 'herbs',
       name: 'Briarthorn',
-      image: '/src/assets/images/herb_briarthorn.jpg',
+      image: imageUrl + 'herb_briarthorn.jpg',
       id:9,
       rarity: 'common',
       price: 200
@@ -93,7 +95,7 @@ const items = [
    {
       category: 'ore',
       name: 'Copper ore',
-      image: '/src/assets/images/ore_copper.jpg',
+      image: imageUrl + 'ore_copper.jpg',
       id: 10,
       rarity: 'common',
       price: 50
@@ -101,7 +103,7 @@ const items = [
    {
       category: 'ore',
       name: 'Tin ore',
-      image: '/src/assets/images/ore_tin.jpg',
+      image: imageUrl + 'ore_tin.jpg',
       id: 11,
       rarity: 'common',
       price: 100
@@ -109,7 +111,7 @@ const items = [
    {
       category: 'ore',
       name: 'Silver ore',
-      image: '/src/assets/images/ore_silver.jpg',
+      image: imageUrl + 'ore_silver.jpg',
       id: 12,
       rarity: 'uncommon',
       price: 2000,
@@ -117,7 +119,7 @@ const items = [
    {
       category: 'ore',
       name: 'Iron ore',
-      image: '/src/assets/images/ore_iron.jpg',
+      image: imageUrl + 'ore_iron.jpg',
       id: 13,
       rarity: 'common',
       price: 1000
@@ -125,7 +127,7 @@ const items = [
    {
       category: 'stones',
       name: 'Rough stone',
-      image: '/src/assets/images/stone_rough.jpg',
+      image: imageUrl + 'stone_rough.jpg',
       id: 14,
       rarity: 'common',
       price: 10
@@ -133,7 +135,7 @@ const items = [
    {
       category: 'stones',
       name: 'Coarse stone',
-      image: '/src/assets/images/stone_coarse.jpg',
+      image: imageUrl + 'stone_coarse.jpg',
       id: 15,
       rarity: 'common',
       price: 100
@@ -141,7 +143,7 @@ const items = [
    {
       category: 'stones',
       name: 'Heavy stone',
-      image: '/src/assets/images/stone_heavy.jpg',
+      image: imageUrl + 'stone_heavy.jpg',
       id: 16,
       rarity: 'common',
       price: 300
@@ -149,7 +151,7 @@ const items = [
    {
       category: 'stones',
       name: 'Solid stone',
-      image: '/src/assets/images/stone_solid.jpg',
+      image: imageUrl + 'stone_solid.jpg',
       id: 17,
       rarity: 'common',
       price: 600
